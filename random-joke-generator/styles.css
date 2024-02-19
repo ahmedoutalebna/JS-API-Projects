@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Montserrat&family=Mulish&family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@500&family=Quicksand&family=Rubik:wght@500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fab22e;
+
+}
+.container
+{
+    width: 32%;
+    min-height: 40%;
+    max-height: 80%;
+    background-color: black;
+    border-radius: 8px;
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.container span
+{
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.container p
+{
+    color: white;
+    word-spacing: 2px;
+    letter-spacing: .4px;
+    line-height: 2;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.container button
+{
+    background-color: #fab22e;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 3px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.dis
+{
+    display: none;
+}

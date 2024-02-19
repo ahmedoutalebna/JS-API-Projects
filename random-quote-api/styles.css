@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Montserrat&family=Mulish&family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@500&family=Poppins&family=Quicksand&family=Rubik:wght@500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root
+{
+    --primary-color: red;
+    --second-color: white;
+}
+body
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+.white-container
+{
+    background-color: var(--primary-color);
+    box-shadow: 10px 60px 10px rgba(11, 3, 3, 0.3);
+    position: relative;
+    width: 25rem;
+    height: 20rem;
+    border-radius: 5px;
+    box-shadow: 0 20px 65px rgba(87, 11, 16, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.white-container::after
+{
+    content:'';
+    width: 20rem;
+    height: 25rem;
+    position: absolute;
+    background-color: var(--second-color);
+    top: -10%;
+    z-index: -1;
+}
+.red-container
+{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.quote
+{
+    line-height: 2;
+    font-size: 16px;
+    color: rgb(215, 211, 211);
+}
+.name
+{
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+.get_quote
+{
+    width: 55%;
+    padding-top: .6rem;
+    padding-bottom: .5rem;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

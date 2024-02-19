@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="shape">
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+        </div>
+         <div class="search-box">
+            <input type="text" class="city_name" placeholder="Enter a city name">
+            <button class="search_button">Search</button>
+            <!--
+                city name
+                main
+                description
+                icon
+                temp
+                min-temp
+                max-temp
+            --> 
+         </div>
+         <div class="city-weather">
+            <p class="name">
+                MECCA
+            </p>
+            <div class="status">
+                <p class="main">
+                    Sunny
+                </p>
+                <p class="description">
+                    High sun 
+                </p>
+            </div>
+            <p class="icon">
+                <img src="" class="icon-image">
+            </p>
+            <p class="temp">
+                32.45
+            </p>
+            <div class="min-max">
+                <p class="min"> <span class="center-min-max">min</span> <br> <span class="temper" id="min-temp"></span></p>
+                <div class="bord">
+
+                </div>
+                <p class="max">
+                    <span class="center-min-max">max</span><br> <span id="max-temp" class="temper"></span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Merriweather:ital@0;1&family=Montserrat&family=Mulish&family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@500&family=Poppins&family=Quicksand&family=Rubik:wght@500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+body
+{
+    background-color: #3d64e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container
+{
+    width: 30rem;
+    min-height: 10rem;
+    max-height: 50rem;
+    background-color: white;
+    border-radius: 10px;
+}
+.input-search-box
+{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 2rem;
+}
+.input-search-box input
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 72%;
+    border-bottom: 2px solid #3d64e6;
+    outline: none;
+    font-size: 14px;
+    padding: .5rem .5rem;
+}
+.input-search-box input::placeholder
+{
+    color:rgb(89, 88, 88);
+}
+.input-search-box button
+{
+    width: 22%;
+    color: white;
+    background-color: #3d64e6;
+    border-radius: 22px;   
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.output
+{
+    margin-bottom: 3.7rem;
+}
+.image-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag
+{
+    width: 150px;
+    height:120px;
+    object-fit: contain;
+    object-position: center;
+    text-align: center;
+}
+.name
+{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.informations
+{
+    padding-left: 2.5rem ;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 7px;
+}
+.informations p{
+    font-weight: 800;
+  }
+.capital, .continent, .population, .currency, .language
+{
+    font-weight: 500;
+}  
+.not_availaible
+{
+    text-align: center;
+}
+.empty
+{
+    color: rgb(199, 74, 74);
+    text-align: center;
+}

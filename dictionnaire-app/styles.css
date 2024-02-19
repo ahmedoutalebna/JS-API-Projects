@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato&family=Montserrat&family=Mulish&family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@500&family=Poppins&family=Quicksand&family=Rubik:wght@500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+*:not(i)
+{
+    font-family: "Poppins", sans-serif;
+}
+body
+{
+    background: #ae9cff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container
+{
+    background-color: white;
+    width: 33rem;
+    min-height: 22rem;
+    max-height: 50rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    border-radius: 6px;
+}
+.search-box
+{
+    display: flex;
+    justify-content: space-between;   
+    margin-bottom: 1rem;
+}
+.search-box input
+{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #ae9cff;
+    outline: none;
+    width: 70%;
+}
+.search-box input::placeholder
+{
+    font-size: 14px;
+}
+.search-box button
+{
+    border: none;
+    background-color: #ae9cff;
+    width: 25%;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+.book-name
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.book-name i
+{
+    color: #ae9cff;
+    cursor: pointer;
+}
+.book-name p
+{
+    font-size: 25px;
+    font-weight: 600;
+}
+.explication 
+{
+    word-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+    text-justify: distribute;
+}
+.phonetcs
+{
+    margin-bottom: 1.5rem;
+    color: gray;
+    font-size: 12px;
+    padding-left: 1rem;
+}
+.synonyme
+{
+    margin-top: 1.5rem;
+    border-left: 5px solid #ae9cff;
+    padding-left: 1rem;
+}
+.errorHandler
+{
+    text-align: center;
+}

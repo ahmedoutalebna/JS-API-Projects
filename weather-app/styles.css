@@ -1,0 +1,146 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+:root 
+{
+    --white: #ffffff;
+    --off-white: #e5e5e5;
+    --blue1: #62b8f5;
+    --blue2: #4475ef;
+    --transp-white-1: rgba(255, 255, 255, 0.25); 
+    --transp-white-2: rgba(255, 255, 255, 0.75); 
+    --shadow: rgba(3, 46, 87, 0.2)
+}
+body
+{
+    background: linear-gradient(135deg, var(--blue1), var(--blue2));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container
+{
+    width: 22rem;
+    min-height: 12rem;
+    max-height: 42rem;
+    background: var(--transp-white-1);
+    border-radius: 5px;
+    box-shadow: 0 1.8em 3.7em var(--shadow);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+.shape
+{
+    position: relative;
+}
+.shape-1
+{
+    position: absolute;
+    left: -2em;
+    bottom: -32em;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: var(--transp-white-1);
+    z-index: -1;
+}
+.shape-2
+{
+    position: absolute;
+    right: -7rem;
+    top: -2em;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: var(--transp-white-1);
+}
+.search-box
+{
+    padding: 1.5rem 1.5rem;
+    display: flex;
+    gap: 1rem;
+
+}
+.search-box input
+{
+    border: none; /* Remove the existing border */
+    border-bottom: 2px solid white; /* Add a 2px solid white border at the bottom */
+    outline: none; /* Remove the default input focus outline */
+    padding: 1rem; /* Add some padding for better visual appearance */
+    background: transparent;
+    width: 70%;
+    color: white;
+    font-size: 14px;
+}
+.search-box input::placeholder
+{
+    color: white;
+    font-size: 14spx;
+}
+.search-box button
+{
+    width: 30%;
+    border: none;
+    border-radius: .3rem;
+    color: var(--blue2);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.city-weather
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    gap: 10px;
+}
+
+.name
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+.main
+{
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+.description
+{
+    padding-left: 5px;
+}
+.icon 
+{
+    height: 80px;
+}
+.min-max
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.min-max div
+{
+    border-left: 2px solid #f3f0f0;    
+}
+.center-min-max
+{
+    padding-left: 5px;
+}
+.temp
+{
+    font-size: 40px;
+}
+.error
+{
+    color: white;
+    text-align: center;
+}
